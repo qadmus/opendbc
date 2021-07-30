@@ -154,16 +154,24 @@ BO_ 711 BECMBatteryVoltageCurrent: 6 K17_EBCM
  SG_ HVBatteryVoltage : 31|12@0+ (0.125,0) [0|511.875] "V"  NEO
  SG_ HVBatteryCurrent : 12|13@0- (0.15,0) [-614.4|614.25] "A"  NEO
 
-BO_ 715 ASCMGasRegenCmd: 8 K124_ASCM
- SG_ GasRegenAlwaysOne2 : 9|1@0+ (1,0) [0|1] ""  NEO
- SG_ GasRegenAlwaysOne : 14|1@0+ (1,0) [0|1] ""  NEO
- SG_ GasRegenChecksum : 47|24@0+ (1,0) [0|0] ""  NEO
- SG_ GasRegenCmdActiveInv : 32|1@0+ (1,0) [0|0] ""  NEO
- SG_ GasRegenFullStopActive : 13|1@0+ (1,0) [0|0] ""  NEO
- SG_ GasRegenCmdActive : 0|1@0+ (1,0) [0|0] ""  NEO
- SG_ RollingCounter : 7|2@0+ (1,0) [0|0] ""  NEO
- SG_ GasRegenAlwaysOne3 : 23|1@0+ (1,0) [0|1] ""  NEO
- SG_ GasRegenCmd : 22|12@0+ (1,0) [0|0] ""  NEO
+BO_ 715 ASCMTractionForce: 8 K124_ASCM
+ SG_ TractionForceActive : 0|1@0+ (1,0) [0|1] "" NEO
+ SG_ Set0b00000 : 1|5@1+ (1,0) [0|31] "" NEO
+ SG_ Counter : 7|2@0+ (1,0) [0|3] "" NEO
+ SG_ TractionForce : 8|14@0+ (1,0) [0|0] "" NEO
+ SG_ Set0b001 : 9|3@1+ (1,0) [0|7] "" NEO
+ SG_ RecentStop : 12|1@0+ (1,0) [0|1] "" NEO
+ SG_ Stopped : 13|1@0+ (1,0) [0|1] "" NEO
+ SG_ Set0b01 : 15|2@0+ (1,0) [0|3] "" NEO
+ SG_ Set000 : 24|3@1+ (1,0) [0|7] "" NEO
+ SG_ NotActive : 32|1@0+ (1,0) [0|0] "" NEO
+ SG_ Set0b0000000 : 39|7@0+ (1,0) [0|127] "" NEO
+ SG_ NotTractionForce : 40|14@0+ (1,0) [0|0] "" NEO
+ SG_ NotSet0b001 : 41|3@1+ (1,0) [0|7] "" NEO
+ SG_ NotRecentStop : 44|1@0+ (1,0) [0|1] "" NEO
+ SG_ NotStopped : 45|1@0+ (1,0) [0|1] "" NEO
+ SG_ NotSet0b01 : 47|2@0+ (1,0) [0|3] "" NEO
+ SG_ NotCounter : 56|3@1- (-1,0) [0|7] "" NEO
 
 BO_ 717 ASCM_2CD: 5 K124_ASCM
 
